@@ -1,0 +1,5 @@
+1º Baixe o App DroidScript na PlayStore
+2º Habilite o acesso remoto dentro do App e acesse pelo Computador.
+3º Crie um novo projeto no App e adicione todos os arquivos deste projeto com o 
+   mesmo nome, única exceção é o App.html
+4º Execute o App.

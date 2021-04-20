@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap.min.css" >
+        <meta name="viewport" content="width=device-width">
+        <script src='file:///android_asset/app.js'></script>
+        
+        <script>
+var LAT = 0
+var LON = 0;
+
+loc = app.CreateLocator( "GPS,Network" );
+loc.SetOnChange( loc_OnChange );
+loc.SetRate( 5 );
+loc.Start();
+
+function loc_OnChange( data ){
+    LAT = data.latitude;
+    LON = data.longitude;
+}
+        
+        </script>
+    </head>
+    <body>
+    <div class="container">
+        <h1> Disciplinas </h1>
+        <button type="submit" id="btnDisc" class="btn btn-primary m-2 mt-0">Obter Disciplinas</button>
+        <div id="disc"></div>
+<div id="list" class="list-group">
+
+
+
+</div>
+    </div>
+
+
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js" ></script>
+
+    <script src="disciplinas.js" ></script>
+    </body>
+</html>
